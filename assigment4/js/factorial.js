@@ -19,6 +19,7 @@ elresults.addEventListener("click", function () {
     }
 
     printResult = "Factorial = " + num + " is " + factorialString +  ' = ' +factorialResult;
+    alert(factorialResult)
 
     resultLabel.innerHTML = printResult;
 })
