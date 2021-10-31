@@ -18,7 +18,7 @@ function showMinMaxAvg(){
     }
     avg = sum/numberList.length;
 
-    printResult = 'Min= ' + min + 'Max= ' + max + 'Avg = ' + avg;
+    printResult = ' Min= ' + min + ' Max= ' + max + ' Avg = ' + avg;
 
     let results = document.getElementById('results');
     results.innerHTML = printResult;
