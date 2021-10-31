@@ -1,17 +1,22 @@
+function vowels() {
+    let str = document.getElementById('textname').value;
+    let count = 0;
+    let total_vowels = "";
 
-let vowelCount = document.getElementById("vowelCount")
-let status = document.getElementById("status")
 
-const vowel = ["a", "e", "i","o", "u"]
 
-vowelCount.addEventListener("onclick",function(){
-    for(i = o; i<vowelCount.length; i++)
-    let vowelA = ["a"]
-    let vowelE = ["e"]
-    let vowelI = ["i"]
-    let vowelO = ["o"]
-    let vowelu = ["u"]
+    for (var i = 0; i < str.length; i++) {
+        if (str.charAt(i).match(/[a-zA-Z]/) != null) {
 
-    if(vowel == vowelA, i++)
 
-}) 
+            if (str.charAt(i).match(/[aeiouAEIOU]/)) {
+                total_vowels = total_vowels + str.charAt(i);
+                count++;
+            }
+        }
+    }
+    document.getElementById('vowels').value = total_vowels;
+    document.getElementById('vcount').value = count;
+
+}
+alert(total_vowels);

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vowel count</title>
+    <title>Vowel Checker</title>
+
 </head>
+
 <body>
-    <h1 text-align="center">Vowel Count Checker</h1>
-    <label>Insert Vowel/Sentence Here:</label>
-    <input type="text" id="vowelCount"> <!--text area id and type-->
-    <p id="validation"></p>
-    <button onclick="checkResult()">check</button>
-    <br>
-    <label id="status">number of vowel in the text:</label>
-    <input type="box" id="results">
-
-
-
-    <script src="js/count_vowel.js"></script>
+    <tr>
+        <td>Enter Text :</td
+        <td><input type='text' id='textname'/></td> 
+         
+        Total Vowels :
+        <input type='text' readonly="readonly" id='vowels' />
+         
+        Count Vowels:
+        <input type='text' readonly="readonly" id='vcount'/>
+         
+         
+        <input type='button' value='Get Vowels Count' onclick= "vowels()" />
 </body>
+
+
+
+<script src="js/count_vowel.js"></script>
 </html>
