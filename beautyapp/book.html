@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon-Booking Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/originals/a8/06/05/a8060590528dc1d3440b83df2a979868.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="book.html">Booking</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">List</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container-fluid">
+
+                <div class="booking-form">
+                    <div class="form-header">
+                        <h1 class="text-center">Let's Get Us A Date!</h1>
+                    </div>
+                    <form>
+                        <br>
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group"> <label for="userName">Name</label>
+                                        <input type="text" class="form-control" id="userName">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group"> <label for="phone">Phone</label>
+                                        <input type="text" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group"> <label for="date">Preffered Date</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <label for="pax">No. of Pax</label>
+                                    <div class="form-group"> <select class="form-control" id="pax" required>
+                                            <option value="" selected hidden></option>
+                                            <option  value="1">1</option>
+                                            <option  value="2">2</option>
+                                            <option  value="3">3</option>
+                                        </select>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="session">Choose your Session</label>
+                                    <div class="form-group"> <select class="form-control"  id="session" required>
+                                            <option value="" selected hidden>Session</option>
+                                            <option  value="Makeup">Makeup</option>
+                                            <option  value="Facial">Facial</option>
+                                            <option  value="Hair Dressing">Hair Dressing</option>
+                                        </select>
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="offset-md-3 col-md-6 align-self-center">
+                                    <div class="form-btn">
+                                        <button type="button" class="btn btn-primary btn-lg w-100" id="bookNow">Book
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/book.js"></script>
+</body>
+
+</html>
