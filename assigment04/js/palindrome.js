@@ -24,5 +24,6 @@ elButton.addEventListener("click", function () {
         }
     }
 
+    
     alert(palindrome);
 })
