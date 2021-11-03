@@ -13,7 +13,7 @@ function GetBooking() {
 
             let bookingNameList = document.getElementById("bookingNameList")
             let bookingIds = []
-            
+
 
             //delete all rows in the tables
             for (let k = bookingNameList.rows.length - 1; k > 0; k--) {
@@ -29,7 +29,7 @@ function GetBooking() {
                 let gId = json.booking[i].id;
                 let gSession = json.booking[i].session;
                 let btnId = "delete" + gId;
-                
+
 
 
                 let row = bookingNameList.insertRow(bookingNameList.rows.length)
@@ -40,7 +40,7 @@ function GetBooking() {
                 row.insertCell(4).innerHTML = gPax
                 row.insertCell(5).innerHTML = gSession
                 row.insertCell(6).innerHTML = "<button id='" + btnId + "' type='button' class='btn btn-danger'>Delete</button>"
-                
+
 
 
                 bookingIds.push(btnId)
@@ -50,7 +50,7 @@ function GetBooking() {
                 //console.log(bookingIds[j]) - just top check id inside array
                 let el = document.getElementById(bookingIds[j])
                 el.addEventListener("click", function () {
-                    //console.log(el.id + " clicked") = to check if it's working or not
+                    console.log(el.id + " clicked")
                     let theId = el.id.replace("delete", "")
                     //console.log(theId) - to check
                     DeleteBooking(theId)
@@ -62,7 +62,7 @@ function GetBooking() {
 }
 
 function DeleteBooking(id) {
-    let url = 'https://api.sheety.co/28eb2ef36c67dc00d0543eb113189470/beautySalon/booking/2';
+    let url = 'https://api.sheety.co/28eb2ef36c67dc00d0543eb113189470/beautySalon/booking/'+id;
     fetch(url, {
             method: 'DELETE',
         })
@@ -73,4 +73,3 @@ function DeleteBooking(id) {
         });
 
 }
-

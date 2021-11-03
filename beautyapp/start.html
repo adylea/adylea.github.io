@@ -8,6 +8,15 @@
   <title>Table Booking App - Main Page </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet">
   <style>
     body {
       background-image: url("https://dorinabeautyexpert.com/wp-content/uploads/2017/06/how-to-makeup-your-face-like-beauty-salon-1024x683-6.jpg");
@@ -19,7 +28,7 @@
     }
 
     .marginExample1 {
-      margin: 250px 50px 100px 20px;
+      margin: 200px 55px 100px 20px;
       size: 4em;
       color: blueviolet;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -33,57 +42,61 @@
     }
 
     .textShadow {
-          text-shadow:5px 15px 10px grey;
-        }
+      text-shadow: 5px 15px 10px grey;
+    }
 
-        .paddingExample {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+    .paddingExample {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .app {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
 
-    
+        }
   </style>
 </head>
 
 <body>
   <div class="row">
     <div class="col">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="book.html">Booking</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-light app">
+        <a class="navbar-brand" href="index.html">SERVICES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <a class="nav-link" href="book.html">BOOKING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="list.html">LIST</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="list.html">List</a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
+          </ul>
+        </div>
+      </nav>
 
     </div>
-</div>
+  </div>
   <h1 class="setup textShadow"> SERVICES </h1>
   <div class="marginExample1 paddingExample w-100" aria-label="Basic example">
-    <button type="button" class="btn btn-danger btn-lg">Hair Dressing</button>
-    <button type="button" class="btn btn-danger btn-lg">Facial</button>
-    <button type="button" class="btn btn-danger btn-lg">Makeup</button>
+    <a class="btn btn-primary btn-danger btn-lg" href="hair.html" role="button">HAIR STYLING</a>
+    <a class="btn btn-primary btn-danger btn-lg" href="facial.html" role="button">FACIAL</a>
+    <a class="btn btn-primary btn-danger btn-lg" href="makeup.html" role="button">MAKEUP</a>
   </div>
 
   <div class="offset-md-3 col-md-6 align-self-center">
     <a class="btn btn-primary btn-lg w-100" href="book.html" role="button">Book Now!</a>
-</div>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
